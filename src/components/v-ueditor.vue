@@ -6,6 +6,7 @@
 <script>
 require('../../static/ueditor.config.js')
 require('../../static/ueditor.all.js')
+require('../../static/lang/zh-cn/zh-cn');
 
 export default {
   name: 'vUEditor',
@@ -32,6 +33,12 @@ export default {
   },
   mounted () {
     this.init()
+  },
+  beforeDestroy () {
+    // 组件销毁的时候，要销毁 UEditor 实例
+    if (this.instance !== null && this.instance.destroy) {
+      this.instance.destroy()
+    }
   }
 }
 </script>

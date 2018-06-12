@@ -1,12 +1,12 @@
-import ueditor from './components/ueditor.vue'
+import vueUEditor from './components/v-ueditor.vue'
 
-ueditor.install = function (Vue) {
-  Vue.component(ueditor.name, ueditor)
+vueUEditor.install = function (Vue) {
+  Vue.component(vueUEditor.name, vueUEditor)
 }
 
 // if Vue is the window object, auto install it
 if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(ueditor)
+  window.Vue.use(vueUEditor)
 }
 
-export default ueditor
+export default vueUEditor

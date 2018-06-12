@@ -67,7 +67,10 @@ if (process.env.NODE_ENV === 'production') {
   module.exports.output = {
     path: path.resolve(__dirname, './lib/'),
     publicPath: '/lib/',
-    filename: 'vUEditor.min.js'
+    filename: 'vUEditor.min.js',
+    library: 'vUEditor',
+    libraryTarget: 'umd',
+    umdNamedDefine: true
   }
   module.exports.devtool = '#source-map'
   // http://vue-loader.vuejs.org/en/workflow/production.html

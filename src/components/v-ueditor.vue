@@ -1,5 +1,7 @@
 <template>
+  <div class="ueditor">
     <script id="container" name="content" type="text/plain"></script>
+  </div>
 </template>
 <script>
 require('../../static/ueditor.config.js')
@@ -7,7 +9,12 @@ require('../../static/ueditor.all.js')
 
 export default {
   name: 'vUEditor',
-  props: ['config'],
+  props: {
+    config: {
+      type: Object,
+      default: () => {}
+    }
+  },
   data () {
     return {
       instance: null

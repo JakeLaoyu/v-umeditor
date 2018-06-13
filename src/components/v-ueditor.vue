@@ -6,7 +6,6 @@
 <script>
 require('../../static/ueditor.config.js')
 require('../../static/ueditor.all.js')
-require('../../static/lang/zh-cn/zh-cn');
 
 export default {
   name: 'vUEditor',

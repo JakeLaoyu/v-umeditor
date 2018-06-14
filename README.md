@@ -2,6 +2,10 @@
 
 > UEditor的Vue版本
 
+[Demo](http://gitlab.dxy.net/biz-developer-f2e/dxy-vue-ueditor/blob/master/src/App.vue)
+
+[仓库地址](http://gitlab.dxy.net/biz-developer-f2e/dxy-vue-ueditor)
+
 ## 安装
 
 ```js

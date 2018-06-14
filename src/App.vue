@@ -20,9 +20,6 @@ export default {
     }
   },
   methods: {
-    whenChange (item) {
-      console.log(item)
-    },
     ueditorReady (ue) {
       this.ue = ue
     },

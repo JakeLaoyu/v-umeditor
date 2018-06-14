@@ -1,5 +1,5 @@
 {
-  "name": "v-ueditor",
+  "name": "@dxy/v-ueditor",
   "description": "UEditor的Vue版本",
   "version": "0.0.1",
   "author": "Jake <yucj@dxy.cn>",

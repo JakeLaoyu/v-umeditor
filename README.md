@@ -1,6 +1,6 @@
 # v-ueditor
 
-> UEditor的Vue版本
+> UEditor 1.4.3.3的Vue版本
 
 [Demo](http://gitlab.dxy.net/biz-developer-f2e/dxy-vue-ueditor/blob/master/src/App.vue)
 
@@ -51,3 +51,10 @@ components: {
 | 字段  | 描述                                                                                                 | return |
 |:------|:-----------------------------------------------------------------------------------------------------|:-------|
 | ready | UEditor初始化后返回UEditor实例对象，可以调用实例方法，文档： http://ueditor.baidu.com/doc/#UE.Editor | UE实例 |
+
+或者
+
+```js
+// 获取实例
+window.UE.getEditor(id)
+```

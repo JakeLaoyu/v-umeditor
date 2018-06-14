@@ -17,7 +17,7 @@ export default {
     return {
       ue: '',
       config: {
-        autoHeight: false
+
       }
     }
   },
@@ -25,9 +25,13 @@ export default {
     ueditorReady (ue) {
       this.ue = ue
       this.ue.setContent('v-ueditor')
+      this.ue.addListener('contentChange', () => {
+        this.getContent()
+      })
     },
     getContent () {
       console.log(this.ue.getContent())
+      console.log(window.UE.getEditor('ueditor').getContent())
     }
   }
 }

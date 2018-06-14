@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
-import vUEditor from '../lib/vUEditor.min.js'
+import vUeditor from '../lib/vUeditor.min.js'
 
-Vue.use(vUEditor)
+Vue.use(vUeditor)
 
 /*eslint-disable*/
 new Vue({

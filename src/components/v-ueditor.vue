@@ -8,7 +8,7 @@ require('../../static/ueditor.config.js')
 require('../../static/ueditor.all.js')
 
 export default {
-  name: 'vUEditor',
+  name: 'vUeditor',
   props: {
     config: {
       type: Object,

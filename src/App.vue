@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <a href="javascript:void(0)" @click="getContent">获取内容</a>
-    <vUEditor
+    <v-ueditor
       :config="config"
       @ready="ueditorReady"
-    ></vUEditor>
+    ></v-ueditor>
   </div>
 </template>
 

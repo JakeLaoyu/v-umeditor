@@ -67,8 +67,8 @@ if (process.env.NODE_ENV === 'production') {
   module.exports.output = {
     path: path.resolve(__dirname, './lib/'),
     publicPath: '/lib/',
-    filename: 'vUEditor.min.js',
-    library: 'vUEditor',
+    filename: 'vUeditor.min.js',
+    library: 'vUeditor',
     libraryTarget: 'umd',
     umdNamedDefine: true
   }

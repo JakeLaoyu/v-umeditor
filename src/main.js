@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import vUeditor from '../lib/vUeditor.min.js'
+import vUeditor from './install'
 
 Vue.use(vUeditor)
 

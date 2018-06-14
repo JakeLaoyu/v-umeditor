@@ -1,6 +1,6 @@
 <template>
   <div class="ueditor">
-    <script id="container" name="content" type="text/plain"></script>
+    <script :id="id" name="content" type="text/plain"></script>
   </div>
 </template>
 <script>
@@ -13,6 +13,10 @@ export default {
     config: {
       type: Object,
       default: () => {}
+    },
+    id: {
+      type: String,
+      required: true
     }
   },
   data () {
@@ -23,7 +27,10 @@ export default {
   methods: {
     init () {
       this.$nextTick(() => {
-        this.instance = UE.getEditor('container', this.config)
+        this.instance = UE.getEditor(this.id, {
+          initialFrameWidth: '100%',
+          ...this.config
+        })
         this.instance.addListener('ready', () => {
           this.$emit('ready', this.instance)
         })

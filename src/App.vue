@@ -1,11 +1,10 @@
 <template>
   <div id="app">
-    <a href="javascript:void(0)" @click="getContent">获取内容</a>
-    <v-ueditor
-      id="ueditor"
-      :config="config"
-      @ready="ueditorReady"
-    ></v-ueditor>
+    <a href="javascript:void(0)" @click="$router.push('/')">首页</a>
+    <a href="javascript:void(0)" @click="$router.push('/second')">第二页</a>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 
@@ -22,17 +21,7 @@ export default {
     }
   },
   methods: {
-    ueditorReady (ue) {
-      this.ue = ue
-      this.ue.setContent('v-ueditor')
-      this.ue.addListener('contentChange', () => {
-        this.getContent()
-      })
-    },
-    getContent () {
-      console.log(this.ue.getContent())
-      console.log(window.UE.getEditor('ueditor').getContent())
-    }
+
   }
 }
 </script>

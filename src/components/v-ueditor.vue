@@ -26,19 +26,19 @@ export default {
   },
   methods: {
     init () {
-      this.$nextTick(() => {
-        this.instance = UE.getEditor(this.id, {
-          initialFrameWidth: '100%',
-          ...this.config
-        })
-        this.instance.addListener('ready', () => {
-          this.$emit('ready', this.instance)
-        })
+      this.instance = UE.getEditor(this.id, {
+        initialFrameWidth: '100%',
+        ...this.config
+      })
+      this.instance.addListener('ready', () => {
+        this.$emit('ready', this.instance)
       })
     }
   },
   mounted () {
-    this.init()
+    this.$nextTick(() => {
+      this.init()
+    })
   },
   beforeDestroy () {
     // 组件销毁的时候，要销毁 UEditor 实例

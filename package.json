@@ -1,7 +1,7 @@
 {
   "name": "@dxy/v-ueditor",
   "description": "UEditor的Vue版本",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "author": "Jake <yucj@dxy.cn>",
   "license": "MIT",
   "main": "lib/vUeditor.min.js",
@@ -13,7 +13,8 @@
     "node-sass": "4.9.0",
     "sass": "1.5.1",
     "sass-loader": "7.0.3",
-    "vue": "^2.5.11"
+    "vue": "^2.5.11",
+    "vue-router": "3.0.1"
   },
   "browserslist": [
     "> 1%",

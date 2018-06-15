@@ -2,7 +2,7 @@
 
 > UEditor 1.4.3.3的Vue版本
 
-[Demo](http://gitlab.dxy.net/biz-developer-f2e/dxy-vue-ueditor/blob/master/src/App.vue)
+[Demo](http://gitlab.dxy.net/biz-developer-f2e/dxy-vue-ueditor/blob/master/src/views/index.vue)
 
 [仓库地址](http://gitlab.dxy.net/biz-developer-f2e/dxy-vue-ueditor)
 

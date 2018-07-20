@@ -19,7 +19,7 @@
      * window.UEDITOR_HOME_URL = "/xxxx/xxxx/";
      */
   // var URL = window.UEDITOR_HOME_URL || getUEBasePath()
-  var URL = window.UEDITOR_HOME_URL || '//dxy-biz-1253596709.file.myqcloud.com/ueditor/'
+  var URL = window.UEDITOR_HOME_URL || '//assets.dxycdn.com/third-party/v-ueditor/'
   /**
      * 配置项主体。注意，此处所有涉及到路径的配置别遗漏URL变量。
      */

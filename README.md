@@ -1,6 +1,6 @@
 # v-ueditor
 
-> UEditor 1.4.3.3的Vue版本
+> UMeditor 1.2.3 的Vue版本
 
 [Demo](http://gitlab.dxy.net/biz-developer-f2e/dxy-vue-ueditor/blob/master/src/views/index.vue)
 
@@ -56,5 +56,5 @@ components: {
 
 ```js
 // 获取实例
-window.UE.getEditor(id)
+window.UM.getEditor(id)
 ```

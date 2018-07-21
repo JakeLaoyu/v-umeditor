@@ -1,124 +1,234 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-        "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <html>
 <head>
-    <title>完整demo</title>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <script type="text/javascript" charset="utf-8" src="ueditor.config.js"></script>
-    <script type="text/javascript" charset="utf-8" src="ueditor.all.min.js"> </script>
-    <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
-    <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
-    <script type="text/javascript" charset="utf-8" src="lang/zh-cn/zh-cn.js"></script>
 
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>UMEDITOR 完整demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="third-party/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="umeditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="umeditor.min.js"></script>
+    <script type="text/javascript" src="lang/zh-cn/zh-cn.js"></script>
     <style type="text/css">
-        div{
-            width:100%;
+        h1{
+            font-family: "微软雅黑";
+            font-weight: normal;
+        }
+        .btn {
+            display: inline-block;
+            *display: inline;
+            padding: 4px 12px;
+            margin-bottom: 0;
+            *margin-left: .3em;
+            font-size: 14px;
+            line-height: 20px;
+            color: #333333;
+            text-align: center;
+            text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+            vertical-align: middle;
+            cursor: pointer;
+            background-color: #f5f5f5;
+            *background-color: #e6e6e6;
+            background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+            background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+            background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+            background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+            background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+            background-repeat: repeat-x;
+            border: 1px solid #cccccc;
+            *border: 0;
+            border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+            border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+            border-bottom-color: #b3b3b3;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+            filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+            *zoom: 1;
+            -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+            -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+        }
+
+        .btn:hover,
+        .btn:focus,
+        .btn:active,
+        .btn.active,
+        .btn.disabled,
+        .btn[disabled] {
+            color: #333333;
+            background-color: #e6e6e6;
+            *background-color: #d9d9d9;
+        }
+
+        .btn:active,
+        .btn.active {
+            background-color: #cccccc \9;
+        }
+
+        .btn:first-child {
+            *margin-left: 0;
+        }
+
+        .btn:hover,
+        .btn:focus {
+            color: #333333;
+            text-decoration: none;
+            background-position: 0 -15px;
+            -webkit-transition: background-position 0.1s linear;
+            -moz-transition: background-position 0.1s linear;
+            -o-transition: background-position 0.1s linear;
+            transition: background-position 0.1s linear;
+        }
+
+        .btn:focus {
+            outline: thin dotted #333;
+            outline: 5px auto -webkit-focus-ring-color;
+            outline-offset: -2px;
+        }
+
+        .btn.active,
+        .btn:active {
+            background-image: none;
+            outline: 0;
+            -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+            -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+        }
+
+        .btn.disabled,
+        .btn[disabled] {
+            cursor: default;
+            background-image: none;
+            opacity: 0.65;
+            filter: alpha(opacity=65);
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
         }
     </style>
 </head>
 <body>
-<div>
-    <h1>完整demo</h1>
-    <script id="editor" type="text/plain" style="width:1024px;height:500px;"></script>
-</div>
+<h1>UMEDITOR 完整demo</h1>
+
+<!--style给定宽度可以影响编辑器的最终宽度-->
+<script type="text/plain" id="myEditor" style="width:1000px;height:240px;">
+    <p>这里我可以写一些输入提示</p>
+</script>
+
+
+<div class="clear"></div>
 <div id="btns">
-    <div>
-        <button onclick="getAllHtml()">获得整个html的内容</button>
-        <button onclick="getContent()">获得内容</button>
-        <button onclick="setContent()">写入内容</button>
-        <button onclick="setContent(true)">追加内容</button>
-        <button onclick="getContentTxt()">获得纯文本</button>
-        <button onclick="getPlainTxt()">获得带格式的纯文本</button>
-        <button onclick="hasContent()">判断是否有内容</button>
-        <button onclick="setFocus()">使编辑器获得焦点</button>
-        <button onmousedown="isFocus(event)">编辑器是否获得焦点</button>
-        <button onmousedown="setblur(event)" >编辑器失去焦点</button>
+    <table>
+        <tr>
+            <td>
+                <button class="btn" unselected="on" onclick="getAllHtml()">获得整个html的内容</button>&nbsp;
+                <button class="btn" onclick="getContent()">获得内容</button>&nbsp;
+                <button class="btn" onclick="setContent()">写入内容</button>&nbsp;
+                <button class="btn" onclick="setContent(true)">追加内容</button>&nbsp;
+                <button class="btn" onclick="getContentTxt()">获得纯文本</button>&nbsp;
+                <button class="btn" onclick="getPlainTxt()">获得带格式的纯文本</button>&nbsp;
+                <button class="btn" onclick="hasContent()">判断是否有内容</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="btn" onclick="setFocus()">编辑器获得焦点</button>&nbsp;
+                <button class="btn" onmousedown="isFocus();return false;">编辑器是否获得焦点</button>&nbsp;
+                <button class="btn" onclick="doBlur()">编辑器取消焦点</button>&nbsp;
+                <button class="btn" onclick="insertHtml()">插入给定的内容</button>&nbsp;
+                <button class="btn" onclick="getContentTxt()">获得纯文本</button>&nbsp;
+                <button class="btn" id="enable" onclick="setEnabled()">可以编辑</button>&nbsp;
+                <button class="btn" onclick="setDisabled()">不可编辑</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="btn" onclick="UM.getEditor('myEditor').setHide()">隐藏编辑器</button>&nbsp;
+                <button class="btn" onclick="UM.getEditor('myEditor').setShow()">显示编辑器</button>&nbsp;
+                <button class="btn" onclick="UM.getEditor('myEditor').setHeight(300)">设置编辑器的高度为300</button>&nbsp;
+                <button class="btn" onclick="UM.getEditor('myEditor').setWidth(1200)">设置编辑器的宽度为1200</button>
+            </td>
+        </tr>
 
-    </div>
-    <div>
-        <button onclick="getText()">获得当前选中的文本</button>
-        <button onclick="insertHtml()">插入给定的内容</button>
-        <button id="enable" onclick="setEnabled()">可以编辑</button>
-        <button onclick="setDisabled()">不可编辑</button>
-        <button onclick=" UE.getEditor('editor').setHide()">隐藏编辑器</button>
-        <button onclick=" UE.getEditor('editor').setShow()">显示编辑器</button>
-        <button onclick=" UE.getEditor('editor').setHeight(300)">设置高度为300默认关闭了自动长高</button>
-    </div>
-
-    <div>
-        <button onclick="getLocalData()" >获取草稿箱内容</button>
-        <button onclick="clearLocalData()" >清空草稿箱</button>
-    </div>
-
+    </table>
 </div>
+<table>
+    <tr>
+        <td>
+            <button class="btn" onclick="createEditor()"/>创建编辑器</button>
+            <button class="btn" onclick="deleteEditor()"/>删除编辑器</button>
+        </td>
+    </tr>
+</table>
+
 <div>
-    <button onclick="createEditor()">
-    创建编辑器</button>
-    <button onclick="deleteEditor()">
-    删除编辑器</button>
+    <h3 id="focush2"></h3>
 </div>
-
 <script type="text/javascript">
-
     //实例化编辑器
-    //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
-    var ue = UE.getEditor('editor');
-
-
-    function isFocus(e){
-        alert(UE.getEditor('editor').isFocus());
-        UE.dom.domUtils.preventDefault(e)
-    }
-    function setblur(e){
-        UE.getEditor('editor').blur();
-        UE.dom.domUtils.preventDefault(e)
-    }
+    var um = UM.getEditor('myEditor');
+    um.addListener('blur',function(){
+        $('#focush2').html('编辑器失去焦点了')
+    });
+    um.addListener('focus',function(){
+        $('#focush2').html('')
+    });
+    //按钮的操作
     function insertHtml() {
         var value = prompt('插入html代码', '');
-        UE.getEditor('editor').execCommand('insertHtml', value)
+        um.execCommand('insertHtml', value)
+    }
+    function isFocus(){
+        alert(um.isFocus())
+    }
+    function doBlur(){
+        um.blur()
     }
     function createEditor() {
         enableBtn();
-        UE.getEditor('editor');
+        um = UM.getEditor('myEditor');
     }
     function getAllHtml() {
-        alert(UE.getEditor('editor').getAllHtml())
+        alert(UM.getEditor('myEditor').getAllHtml())
     }
     function getContent() {
         var arr = [];
         arr.push("使用editor.getContent()方法可以获得编辑器的内容");
         arr.push("内容为：");
-        arr.push(UE.getEditor('editor').getContent());
+        arr.push(UM.getEditor('myEditor').getContent());
         alert(arr.join("\n"));
     }
     function getPlainTxt() {
         var arr = [];
         arr.push("使用editor.getPlainTxt()方法可以获得编辑器的带格式的纯文本内容");
         arr.push("内容为：");
-        arr.push(UE.getEditor('editor').getPlainTxt());
+        arr.push(UM.getEditor('myEditor').getPlainTxt());
         alert(arr.join('\n'))
     }
     function setContent(isAppendTo) {
         var arr = [];
-        arr.push("使用editor.setContent('欢迎使用ueditor')方法可以设置编辑器的内容");
-        UE.getEditor('editor').setContent('欢迎使用ueditor', isAppendTo);
+        arr.push("使用editor.setContent('欢迎使用umeditor')方法可以设置编辑器的内容");
+        UM.getEditor('myEditor').setContent('欢迎使用umeditor', isAppendTo);
         alert(arr.join("\n"));
     }
     function setDisabled() {
-        UE.getEditor('editor').setDisabled('fullscreen');
+        UM.getEditor('myEditor').setDisabled('fullscreen');
         disableBtn("enable");
     }
 
     function setEnabled() {
-        UE.getEditor('editor').setEnabled();
+        UM.getEditor('myEditor').setEnabled();
         enableBtn();
     }
 
     function getText() {
         //当你点击按钮时编辑区域已经失去了焦点，如果直接用getText将不会得到内容，所以要在选回来，然后取得内容
-        var range = UE.getEditor('editor').selection.getRange();
+        var range = UM.getEditor('myEditor').selection.getRange();
         range.select();
-        var txt = UE.getEditor('editor').selection.getText();
+        var txt = UM.getEditor('myEditor').selection.getText();
         alert(txt)
     }
 
@@ -126,29 +236,29 @@
         var arr = [];
         arr.push("使用editor.getContentTxt()方法可以获得编辑器的纯文本内容");
         arr.push("编辑器的纯文本内容为：");
-        arr.push(UE.getEditor('editor').getContentTxt());
+        arr.push(UM.getEditor('myEditor').getContentTxt());
         alert(arr.join("\n"));
     }
     function hasContent() {
         var arr = [];
         arr.push("使用editor.hasContents()方法判断编辑器里是否有内容");
         arr.push("判断结果为：");
-        arr.push(UE.getEditor('editor').hasContents());
+        arr.push(UM.getEditor('myEditor').hasContents());
         alert(arr.join("\n"));
     }
     function setFocus() {
-        UE.getEditor('editor').focus();
+        UM.getEditor('myEditor').focus();
     }
     function deleteEditor() {
         disableBtn();
-        UE.getEditor('editor').destroy();
+        UM.getEditor('myEditor').destroy();
     }
     function disableBtn(str) {
         var div = document.getElementById('btns');
-        var btns = UE.dom.domUtils.getElementsByTagName(div, "button");
+        var btns = domUtils.getElementsByTagName(div, "button");
         for (var i = 0, btn; btn = btns[i++];) {
             if (btn.id == str) {
-                UE.dom.domUtils.removeAttributes(btn, ["disabled"]);
+                domUtils.removeAttributes(btn, ["disabled"]);
             } else {
                 btn.setAttribute("disabled", "true");
             }
@@ -156,20 +266,12 @@
     }
     function enableBtn() {
         var div = document.getElementById('btns');
-        var btns = UE.dom.domUtils.getElementsByTagName(div, "button");
+        var btns = domUtils.getElementsByTagName(div, "button");
         for (var i = 0, btn; btn = btns[i++];) {
-            UE.dom.domUtils.removeAttributes(btn, ["disabled"]);
+            domUtils.removeAttributes(btn, ["disabled"]);
         }
     }
-
-    function getLocalData () {
-        alert(UE.getEditor('editor').execCommand( "getlocaldata" ));
-    }
-
-    function clearLocalData () {
-        UE.getEditor('editor').execCommand( "clearlocaldata" );
-        alert("已清空草稿箱")
-    }
 </script>
+
 </body>
 </html>

@@ -4,8 +4,11 @@
   </div>
 </template>
 <script>
-require('../../static/ueditor.config.js')
-require('../../static/ueditor.all.js')
+import $ from '../../static/third-party/jquery.js'
+window.$ = window.jQuery = $
+window.UMEDITOR_HOME_URL = '//assets.dxycdn.com/third-party/umeditor-1.2.3/'
+require('../../static/umeditor.config.js')
+require('../../static/umeditor.js')
 
 export default {
   name: 'vUeditor',
@@ -26,7 +29,8 @@ export default {
   },
   methods: {
     init () {
-      this.instance = UE.getEditor(this.id, {
+      console.log('初始化')
+      this.instance = UM.getEditor(this.id, {
         initialFrameWidth: '100%',
         ...this.config
       })
@@ -49,4 +53,5 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@import url('../../static/themes/default/css/umeditor.css');
 </style>

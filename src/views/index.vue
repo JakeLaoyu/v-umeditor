@@ -33,7 +33,7 @@ export default {
     },
     getContent () {
       console.log(this.ue.getContent())
-      console.log(window.UE.getEditor('ueditor').getContent())
+      console.log(window.UM.getEditor('ueditor').getContent())
     }
   }
 }

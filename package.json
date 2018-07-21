@@ -1,15 +1,16 @@
 {
   "name": "@dxy/v-ueditor",
-  "description": "UEditor的Vue版本",
-  "version": "0.0.7",
+  "description": "UMeditor的Vue版本",
+  "version": "0.0.8",
   "author": "Jake <yucj@dxy.cn>",
   "license": "MIT",
   "main": "lib/vUeditor.min.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --host 0.0.0.0 --open --hot",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
+    "jquery": "3.3.1",
     "node-sass": "4.9.0",
     "sass": "1.5.1",
     "sass-loader": "7.0.3",

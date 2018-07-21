@@ -9,7 +9,8 @@ module.exports = {
     browser: true,
   },
   globals: {
-    UE: true
+    UE: true,
+    UM: true
   },
   extends: [
     // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention

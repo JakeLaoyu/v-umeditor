@@ -2,8 +2,9 @@
 
 > UMeditor 1.2.3 的Vue版本
 
-[完整demo](http://assets.dxycdn.com/gitrepo/dxy-vue-ueditor/static/index.html)
-[Demo](http://gitlab.dxy.net/biz-developer-f2e/dxy-vue-ueditor/blob/master/src/views/index.vue)
+[完整DEMO](http://assets.dxycdn.com/gitrepo/dxy-vue-ueditor/static/index.html)
+
+[DEMO](http://gitlab.dxy.net/biz-developer-f2e/dxy-vue-ueditor/blob/master/src/views/index.vue)
 
 [仓库地址](http://gitlab.dxy.net/biz-developer-f2e/dxy-vue-ueditor)
 

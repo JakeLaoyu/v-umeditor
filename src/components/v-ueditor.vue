@@ -1,5 +1,7 @@
 <template>
-  <div class="ueditor">
+  <div class="ueditor" :class="{
+    newstyle: newstyle
+    }">
     <script :id="id" name="content" type="text/plain"></script>
   </div>
 </template>
@@ -13,6 +15,10 @@ require('../../static/umeditor.js')
 export default {
   name: 'vUeditor',
   props: {
+    newstyle: {
+      type: Boolean,
+      default: true
+    },
     config: {
       type: Object,
       default: () => {}
@@ -53,5 +59,5 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import url('../../static/themes/default/css/umeditor.css');
-@import url('../../static/themes/dxy/ueditor.scss');
+@import url('../../static/themes/dxy/ueditor.css');
 </style>

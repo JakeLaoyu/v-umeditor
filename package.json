@@ -1,7 +1,7 @@
 {
   "name": "@dxy/v-ueditor",
   "description": "UMeditor的Vue版本",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Jake <yucj@dxy.cn>",
   "license": "MIT",
   "main": "lib/vUeditor.min.js",

@@ -6,7 +6,6 @@
 <script>
 import $ from '../../static/third-party/jquery.js'
 window.$ = window.jQuery = $
-// window.UMEDITOR_HOME_URL = '//assets.dxycdn.com/third-party/umeditor-1.2.3/'
 window.UMEDITOR_HOME_URL = '//assets.dxycdn.com/gitrepo/dxy-vue-ueditor/static/'
 require('../../static/umeditor.config.js')
 require('../../static/umeditor.js')

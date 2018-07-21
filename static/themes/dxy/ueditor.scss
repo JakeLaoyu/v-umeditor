@@ -5,11 +5,19 @@
   background-image: url("./images2/icons.gif");
 }
 
+.edui-toolbar .edui-btn-toolbar {
+  text-align: left;
+}
 .edui-btn-toolbar .edui-btn.edui-active,
 .edui-btn-toolbar .edui-btn.edui-hover {
   background-color: #EEE;
   border: 1px solid #EEE;
   border-radius: 5px;
+}
+
+.edui-btn-toolbar .edui-btn.edui-active.edui-combobox,
+.edui-btn-toolbar .edui-btn.edui-hover.edui-combobox {
+  border: none;
 }
 
 .edui-toolbar .edui-separator {
@@ -19,6 +27,14 @@
   height: 30px;
   margin: 5px;
   box-sizing: border-box;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-fullscreen {
+  background-position: 0 -50px;
+}
+
+.edui-btn.edui-btn-fullscreen.edui-active .edui-icon-fullscreen {
+  background-position: -50px -50px;
 }
 
 .edui-btn-toolbar .edui-btn .edui-icon-source {
@@ -138,4 +154,67 @@
   height: 100%;
   background: url("./images/arrow.png") center no-repeat;
   background-size: 100% auto;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-justifyleft {
+  background-position: -500px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-justifycenter {
+  background-position: -550px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-justifyright {
+  background-position: -600px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-link {
+  background-position: -350px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-unlink {
+  background-position: -400px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-image {
+      background-position: -450px 0px;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-video {
+      background-position: -900px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-horizontal {
+  background-position: -950px 0;
+
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-drafts {
+  background: url("./images2/drafts.png") center no-repeat;
+  background-size: auto 20px;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-formula {
+  background: url("./images2/formula.png") center no-repeat;
+  background-size: auto 20px;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-emotion {
+  background: url("./images2/emotion.png") center no-repeat;
+  background-size: auto 20px;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-map {
+  background: url("./images2/map.png") center no-repeat;
+  background-size: auto 20px;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-print {
+  background: url("./images2/print.png") center no-repeat;
+  background-size: auto 20px;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-preview{
+  background: url("./images2/preview.png") center no-repeat;
+  background-size: auto 20px;
 }

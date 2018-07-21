@@ -1,0 +1,141 @@
+.edui-icon {
+  height: 40px !important;
+  width: 46px !important;
+  background-image: url("./images2/icons.png");
+  background-image: url("./images2/icons.gif");
+}
+
+.edui-btn-toolbar .edui-btn.edui-active,
+.edui-btn-toolbar .edui-btn.edui-hover {
+  background-color: #EEE;
+  border: 1px solid #EEE;
+  border-radius: 5px;
+}
+
+.edui-toolbar .edui-separator {
+  background: #C9C4C4;
+  width: 1px;
+  padding: 0;
+  height: 30px;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-source {
+  background-position: -100px -50px;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-undo {
+  background-position: 0 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-redo {
+  background-position: -50px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-bold {
+  background-position: -100px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-italic {
+  background-position: -150px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-underline {
+  background-position: -200px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-strikethrough {
+  background-position: -400px -50px;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-superscript {
+  background-position: -750px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-subscript {
+  background-position: -800px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-font,
+.edui-btn-toolbar .edui-btn .edui-icon-forecolor {
+  background-position: -202px -50px;
+}
+
+.edui-btn-toolbar .edui-btn {
+  height: 40px;
+}
+
+.edui-splitbutton-color-label {
+  left: 0;
+  margin: auto;
+  right: 0;
+  bottom: 5px;
+}
+
+.edui-splitbutton .edui-caret {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 5px;
+  height: 100%;
+  background: url("./images/arrow.png") center no-repeat;
+  background-size: 100% auto;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-backcolor {
+  background: url("./images2/backcolor.png") center no-repeat;
+  background-size: auto 20px;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-removeformat {
+  background-position: -350px -50px;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-insertorderedlist {
+  background-position: -250px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-insertunorderedlist {
+  background-position: -300px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-selectall {
+  background: url("./images2/selectall.png") center no-repeat;
+  background-size: auto 20px;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-cleardoc {
+  background: url("./images2/cleardoc.png") center no-repeat;
+  background-size: auto 20px;
+}
+
+.edui-btn-toolbar .edui-combobox {
+  height: 40px;
+  line-height: 40px;
+  border: none;
+}
+
+.edui-combobox .edui-button-label {
+  background-position: right -106px;
+  box-sizing: border-box;
+  width: 100px;
+  font-size: 12px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 15px;
+  padding-right: 10px;
+  white-space: nowrap;
+  margin: 0 3px 0 0;
+  text-align: left;
+}
+
+.edui-combobox .edui-caret {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 5px;
+  height: 100%;
+  background: url("./images/arrow.png") center no-repeat;
+  background-size: 100% auto;
+}

@@ -114,11 +114,20 @@
 <body>
 <h1>UMEDITOR 完整demo</h1>
 
-<!--style给定宽度可以影响编辑器的最终宽度-->
-<script type="text/plain" id="myEditor" style="width:1000px;height:240px;">
+<h2>旧样式</h2>
+<div style="margin-bottom:20px;">
+  <script type="text/plain" id="myEditor1" style="width:1000px;height:240px;">
     <p>这里我可以写一些输入提示</p>
-</script>
+  </script>
+</div>
 
+<h2>新样式</h2>
+<!--style给定宽度可以影响编辑器的最终宽度-->
+<div class="newstyle">
+  <script type="text/plain" id="myEditor" style="width:1000px;height:240px;">
+    <p>这里我可以写一些输入提示</p>
+  </script>
+</div>
 
 <div class="clear"></div>
 <div id="btns">
@@ -171,6 +180,7 @@
 <script type="text/javascript">
     //实例化编辑器
     var um = UM.getEditor('myEditor');
+    var um1 = UM.getEditor('myEditor1');
     um.addListener('blur',function(){
         $('#focush2').html('编辑器失去焦点了')
     });

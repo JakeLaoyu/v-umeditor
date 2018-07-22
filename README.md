@@ -44,11 +44,11 @@ components: {
 
 ## props
 
-| 字段     | 必填 | 类型    | 默认值 | 描述                                                          |
-|:---------|:-----|:--------|:-------|:--------------------------------------------------------------|
-| id       | 是   | String  | 无     | 当前编辑器 id                                                 |
-| config   | 否   | Object  | {}     | 配置参数，详细参考 http://fex.baidu.com/ueditor/#start-config |
-| newstyle | 否   | Boolean | true   | 是否使用新样式                                                |
+| 字段     | 必填 | 类型    | 默认值 | 描述                                                                                                 |
+|:---------|:-----|:--------|:-------|:-----------------------------------------------------------------------------------------------------|
+| id       | 是   | String  | 无     | 当前编辑器 id                                                                                        |
+| config   | 否   | Object  | {}     | 配置参数，详细参考 http://gitlab.dxy.net/ECDFE/dxy-vue-ueditor/blob/master/static/umeditor.config.js |
+| newstyle | 否   | Boolean | true   | 是否使用新样式                                                                                       |
 
 
 ## Events

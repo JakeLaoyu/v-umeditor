@@ -1,10 +1,8 @@
 # v-ueditor
 
-> UMeditor 1.2.2 的Vue版本。
+> UMeditor 1.2.3 的Vue版本。
 
-> 由于 1.2.3版本 无法选择字体和段落，目前使用1.2.2版本
-
-[完整DEMO](http://assets.dxycdn.com/gitrepo/dxy-vue-ueditor/static/index.html?1256)
+[完整DEMO](http://assets.dxycdn.com/gitrepo/dxy-vue-ueditor/static/index.html?3245)
 
 [DEMO](http://gitlab.dxy.net/biz-developer-f2e/dxy-vue-ueditor/blob/master/src/views/index.vue)
 

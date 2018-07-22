@@ -90,7 +90,7 @@
   bottom: 5px;
 }
 
-.newstyle .newstyle .edui-splitbutton .edui-caret {
+.newstyle .edui-splitbutton .edui-caret {
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -100,7 +100,7 @@
   background-size: 100% auto;
 }
 
-.newstyle .newstyle .edui-btn-toolbar .edui-btn .edui-icon-backcolor {
+.newstyle .edui-btn-toolbar .edui-btn .edui-icon-backcolor {
   background: url("./images2/backcolor.png") center no-repeat;
   background-size: auto 20px;
 }

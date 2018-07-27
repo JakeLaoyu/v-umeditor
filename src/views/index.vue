@@ -4,7 +4,9 @@
     <v-ueditor
       id="ueditor"
       :config="config"
+      content="初始化内容"
       @ready="ueditorReady"
+      @change="ueditorChange"
     ></v-ueditor>
   </div>
 </template>
@@ -25,11 +27,10 @@ export default {
     ueditorReady (ue) {
       console.log('Ready')
       this.ue = ue
-      this.ue.setContent('v-ueditor')
-      this.ue.addListener('contentChange', () => {
-        console.log('change')
-        this.getContent()
-      })
+      // this.ue.setContent('v-ueditor')
+    },
+    ueditorChange (ue) {
+      console.log(ue.getContent())
     },
     getContent () {
       console.log(this.ue.getContent())

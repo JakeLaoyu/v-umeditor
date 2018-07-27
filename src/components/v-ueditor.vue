@@ -2,7 +2,7 @@
   <div class="ueditor" :class="{
     newstyle: newstyle
     }">
-    <script :id="id" name="content" type="text/plain"></script>
+    <script :id="id" name="content" type="text/plain">{{ content }}</script>
   </div>
 </template>
 <script>
@@ -18,6 +18,10 @@ export default {
     newstyle: {
       type: Boolean,
       default: true
+    },
+    content: {
+      type: String,
+      default: ''
     },
     config: {
       type: Object,
@@ -41,6 +45,9 @@ export default {
       })
       this.instance.addListener('ready', () => {
         this.$emit('ready', this.instance)
+      })
+      this.instance.addListener('contentChange', () => {
+        this.$emit('change', this.instance)
       })
     }
   },

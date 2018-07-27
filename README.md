@@ -45,15 +45,17 @@ components: {
 | 字段     | 必填 | 类型    | 默认值 | 描述                                                                                                 |
 |:---------|:-----|:--------|:-------|:-----------------------------------------------------------------------------------------------------|
 | id       | 是   | String  | 无     | 当前编辑器 id                                                                                        |
+| content  | 否   | String  | 无     | 初始化数据内容                                                                                       |
 | config   | 否   | Object  | {}     | 配置参数，详细参考 http://gitlab.dxy.net/ECDFE/dxy-vue-ueditor/blob/master/static/umeditor.config.js |
 | newstyle | 否   | Boolean | true   | 是否使用新样式                                                                                       |
 
 
 ## Events
 
-| 字段  | 描述                                                                                                 | return |
-|:------|:-----------------------------------------------------------------------------------------------------|:-------|
-| ready | UEditor初始化后返回UEditor实例对象，可以调用实例方法，文档： http://ueditor.baidu.com/doc/#UE.Editor | UE实例 |
+| 字段   | 描述                                                                                                       | return |
+|:-------|:-----------------------------------------------------------------------------------------------------------|:-------|
+| ready  | UEditor初始化后返回UEditor实例对象，可以调用实例方法，文档： http://ueditor.baidu.com/doc/#UE.Editor       | UE实例 |
+| change | 监听UEditor内容改变，返回UEditor实例对象，可以调用实例方法，文档： http://ueditor.baidu.com/doc/#UE.Editor | UE实例 |
 
 或者
 

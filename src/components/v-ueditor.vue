@@ -34,28 +34,30 @@ export default {
   },
   data () {
     return {
-      instance: null,
-      ready: false
+      instance: null
     }
   },
   watch: {
     content (val) {
-      if (this.ready) {
-        this.instance.setContent(val)
+      if (this.instance) {
+        try {
+          this.instance.setContent(val)
+        } catch (e) {
+
+        }
       }
     }
   },
   methods: {
+    setContent () {
+      this.instance.setContent(this.content)
+    },
     init () {
       this.instance = UM.getEditor(this.id, {
         initialFrameWidth: '100%',
         ...this.config
       })
       this.instance.addListener('ready', () => {
-        this.ready = true
-        if (this.content) {
-          this.instance.setContent(this.content)
-        }
         this.$emit('ready', this.instance)
       })
       this.instance.addListener('contentChange', () => {

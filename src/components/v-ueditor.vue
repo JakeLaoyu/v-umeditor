@@ -39,7 +39,9 @@ export default {
   },
   watch: {
     content (val) {
-      this.instance.setContent(val)
+      if (this.instance) {
+        this.instance.setContent(val)
+      }
     }
   },
   methods: {

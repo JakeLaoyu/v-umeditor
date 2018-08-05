@@ -42,6 +42,9 @@ export default {
     setTimeout(() => {
       this.content = '初始化内容'
     }, 3000)
+    setTimeout(() => {
+      this.content = '内容'
+    }, 5000)
   }
 }
 </script>

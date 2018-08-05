@@ -34,12 +34,13 @@ export default {
   },
   data () {
     return {
-      instance: null
+      instance: null,
+      ready: false
     }
   },
   watch: {
     content (val) {
-      if (this.instance) {
+      if (this.ready) {
         this.instance.setContent(val)
       }
     }
@@ -51,6 +52,7 @@ export default {
         ...this.config
       })
       this.instance.addListener('ready', () => {
+        this.ready = true
         this.$emit('ready', this.instance)
       })
       this.instance.addListener('contentChange', () => {

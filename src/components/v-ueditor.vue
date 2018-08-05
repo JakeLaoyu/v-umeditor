@@ -53,6 +53,9 @@ export default {
       })
       this.instance.addListener('ready', () => {
         this.ready = true
+        if (this.content) {
+          this.instance.setContent(this.content)
+        }
         this.$emit('ready', this.instance)
       })
       this.instance.addListener('contentChange', () => {

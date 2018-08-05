@@ -4,7 +4,7 @@
     <v-ueditor
       id="ueditor"
       :config="config"
-      content="初始化内容"
+      :content="content"
       @ready="ueditorReady"
       @change="ueditorChange"
     ></v-ueditor>
@@ -18,6 +18,7 @@ export default {
   data () {
     return {
       ue: '',
+      content: '',
       config: {
 
       }
@@ -36,6 +37,11 @@ export default {
       console.log(this.ue.getContent())
       console.log(window.UM.getEditor('ueditor').getContent())
     }
+  },
+  mounted () {
+    setTimeout(() => {
+      this.content = '初始化内容'
+    }, 3000)
   }
 }
 </script>

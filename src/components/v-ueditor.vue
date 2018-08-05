@@ -37,6 +37,11 @@ export default {
       instance: null
     }
   },
+  watch: {
+    content (val) {
+      this.instance.setContent(val)
+    }
+  },
   methods: {
     init () {
       this.instance = UM.getEditor(this.id, {

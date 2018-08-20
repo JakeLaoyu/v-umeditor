@@ -1,22 +1,21 @@
 # v-ueditor
 
 > UMeditor 1.2.3 的Vue版本。
+> 加入自定义UI，丰富和现代风格
 
-[完整DEMO](http://assets.dxycdn.com/gitrepo/dxy-vue-ueditor/static/index.html?3245)
+[完整DEMO](https://jakelaoyu.github.io/v-umeditor/static/index.html)
 
-[DEMO](http://gitlab.dxy.net/biz-developer-f2e/dxy-vue-ueditor/blob/master/src/views/index.vue)
-
-[仓库地址](http://gitlab.dxy.net/biz-developer-f2e/dxy-vue-ueditor)
+[代码DEMO](https://github.com/JakeLaoyu/v-umeditor/blob/master/src/views/index.vue)
 
 ## 安装
 
 ```js
-npm i @dxy/v-ueditor -S
+npm i v-umeditor -S
 ```
 ### 全局引用
 
 ```js
-import vUeditor from '@dxy/v-ueditor'
+import vUeditor from 'v-umeditor'
 
 Vue.use(vUeditor)
 ```
@@ -24,7 +23,7 @@ Vue.use(vUeditor)
 ### 在组件内引用
 
 ```js
-import vUeditor from '@dxy/v-ueditor'
+import vUeditor from 'v-ueditor'
 
 components: {
   vUeditor

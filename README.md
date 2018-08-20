@@ -1,7 +1,7 @@
 # v-ueditor
 
 > UMeditor 1.2.3 的Vue版本。
-> 加入自定义UI，丰富和现代风格
+> 加入自定义UI，适应现代风格
 
 [完整DEMO](https://jakelaoyu.github.io/v-umeditor/static/index.html)
 

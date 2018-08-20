@@ -43,12 +43,12 @@ components: {
 
 ## props
 
-| 字段     | 必填 | 类型    | 默认值 | 描述                                                                                                 |
-|:-------- |:---- |:------- |:------ |:---------------------------------------------------------------------------------------------------- |
-| id       | 是   | String  | 无     | 当前编辑器 id                                                                                        |
-| content  | 否   | String  | 无     | 初始化数据内容                                                                                       |
-| config   | 否   | Object  | {}     | 配置参数，详细参考 http://gitlab.dxy.net/ECDFE/dxy-vue-ueditor/blob/master/static/umeditor.config.js |
-| newstyle | 否   | Boolean | true   | 是否使用新样式                                                                                       |
+| 字段     | 必填 | 类型    | 默认值 | 描述                                                                                             |
+|:-------- |:---- |:------- |:------ |:------------------------------------------------------------------------------------------------ |
+| id       | 是   | String  | 无     | 当前编辑器 id                                                                                    |
+| content  | 否   | String  | 无     | 初始化数据内容                                                                                   |
+| config   | 否   | Object  | {}     | 配置参数，详细参考 https://github.com/JakeLaoyu/v-umeditor/blob/master/static/umeditor.config.js |
+| newstyle | 否   | Boolean | true   | 是否使用新样式                                                                                   |
 
 
 ## Events

@@ -8,7 +8,7 @@
 <script>
 import $ from '../../static/third-party/jquery.js'
 window.$ = window.jQuery = $
-window.UMEDITOR_HOME_URL = '//assets.dxycdn.com/gitrepo/dxy-vue-ueditor/static/'
+window.UMEDITOR_HOME_URL = '//jakelaoyu.github.io/v-umeditor/static/'
 require('../../static/umeditor.config.js')
 require('../../static/umeditor.js')
 

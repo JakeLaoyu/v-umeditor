@@ -6378,7 +6378,7 @@
     me.addListener('keydown', function (type, evt) {
       var me = this
       var keyCode = evt.keyCode || evt.which
-      if (!keys[keyCode] && !evt.ctrlKey && !evt.metaKey && !evt.shiftKey && !evt.altKey) {
+      if (!keys[keyCode] && !(evt.ctrlKey && keyCode === 17) && !(evt.metaKey && keyCode === 93) && !(evt.shiftKey && keyCode === 16) && !(evt.altKey && keyCode === 18)) {
         if (inputType) { return }
 
         if (!me.selection.getRange().collapsed) {
@@ -6417,7 +6417,7 @@
     })
     me.addListener('keyup', function (type, evt) {
       var keyCode = evt.keyCode || evt.which
-      if (!keys[keyCode] && !evt.ctrlKey && !evt.metaKey && !evt.shiftKey && !evt.altKey) {
+      if (!keys[keyCode] && !(evt.ctrlKey && keyCode === 17) && !(evt.metaKey && keyCode === 93) && !(evt.shiftKey && keyCode === 16) && !(evt.altKey && keyCode === 18)) {
         if (inputType) { return }
         if (!isCollapsed) {
           this.undoManger.save(false, true)

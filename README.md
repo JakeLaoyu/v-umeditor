@@ -7,6 +7,8 @@
 
 [代码DEMO](https://github.com/JakeLaoyu/v-umeditor/blob/master/src/views/index.vue)
 
+*图片上传请参考官方DEMO文档，需要后端配合 [https://ueditor.baidu.com/website/download.html#mini](https://ueditor.baidu.com/website/download.html#mini)*
+
 ## 安装
 
 ```js

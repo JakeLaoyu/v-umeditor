@@ -5946,11 +5946,11 @@
 
     this.addOutputRule(function (root) {
       $.each(root.getNodesByTagName('a'), function (i, a) {
-        var _href = a.getAttr('_href')
+        var _href = a.getAttr('href')
         if (!/^(ftp|https?|\/|file)/.test(_href)) {
           _href = 'http://' + _href
         }
-        a.setAttr('href', _href)
+        if (_href !== 'http://undefined') a.setAttr('href', _href)
         a.setAttr('_href')
         if (a.getAttr('title') == '') {
           a.setAttr('title')

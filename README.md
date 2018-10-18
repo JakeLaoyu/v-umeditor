@@ -41,7 +41,7 @@ components: {
 ></v-ueditor>
 ```
 
-*注：* 由于vue缓存，当使用ready参数保存返回的编辑器实例，当第二次进入页面时，通过返回实例获取内容报错。建议使用`window.UM.getEditor(id)`方式获取实例
+*注：* 开启vue `keep-alive`时，当使用ready参数保存返回的编辑器实例，当第二次进入页面时，通过返回实例获取内容报错。建议使用`window.UM.getEditor(id)`方式获取实例
 
 ## props
 
@@ -59,6 +59,8 @@ components: {
 |:------ |:---------------------------------------------------------------------------------------------------------- |:------ |
 | ready  | UEditor初始化后返回UEditor实例对象，可以调用实例方法，文档： http://ueditor.baidu.com/doc/#UE.Editor       | UE实例 |
 | change | 监听UEditor内容改变，返回UEditor实例对象，可以调用实例方法，文档： http://ueditor.baidu.com/doc/#UE.Editor | UE实例 |
+
+*注：* 目前发现`contentchange`事件在选中删除时不触发，建议同时监听`contentchange`和`selectionchange`事件，使用`window.UM.getEditor(id).getContent()`获取内容
 
 或者
 

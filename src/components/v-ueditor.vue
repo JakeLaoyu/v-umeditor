@@ -57,11 +57,14 @@ export default {
         initialFrameWidth: '100%',
         ...this.config
       })
-      this.instance.addListener('ready', () => {
+      this.instance.ready(() => {
         this.$emit('ready', this.instance)
       })
       this.instance.addListener('contentChange', () => {
         this.$emit('change', this.instance)
+      })
+      this.instance.addListener('selectionchange', (editor) => {
+        this.instance.fireEvent('contentChange')
       })
     }
   },

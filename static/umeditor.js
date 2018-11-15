@@ -4505,7 +4505,7 @@
         // 源码模式下输入html标签，不能做转换处理，直接输出
         arr.push(node.data)
       } else {
-        arr.push(notTransTagName[node.parentNode.tagName] ? utils.html(node.data) : node.data.replace(/[ ]{2}/g, ' &nbsp;'))
+        arr.push(notTransTagName[node.parentNode.tagName] ? utils.html(node.data) : node.data.replace(/[ ]{2}/g, ' '))
       }
     }
 

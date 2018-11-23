@@ -11,10 +11,14 @@
 
 ## 安装
 
-```js
+```sh
 npm i v-umeditor -S
-或 yarn add v-umeditor
 ```
+或
+```sh
+yarn add v-umeditor
+```
+
 ### 全局引用
 
 ```js

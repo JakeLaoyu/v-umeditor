@@ -13,6 +13,7 @@
 
 ```js
 npm i v-umeditor -S
+或 yarn add v-umeditor
 ```
 ### 全局引用
 

@@ -5,6 +5,7 @@
       id="ueditor"
       :config="config"
       :content="content"
+      :useCustomUpload="true"
       @ready="ueditorReady"
       @change="ueditorChange"
     ></v-ueditor>
@@ -20,7 +21,9 @@ export default {
       ue: '',
       content: '',
       config: {
-
+        imageUrl: '//localhost:3000/server-test/upload', // 图片上传提交地址
+        imagePath: '', //
+        imageFieldName: 'file'
       }
     }
   },

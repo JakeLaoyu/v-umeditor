@@ -10002,7 +10002,7 @@
     var me = this, currentRange, $dialog,
       opt = {
         title: (me.options.labelMap && me.options.labelMap[name]) || me.getLang('labelMap.' + name),
-        url: me.options.UMEDITOR_HOME_URL + 'dialogs/' + name + '/' + name + '.js'
+        url: me.options.UMEDITOR_HOME_URL + 'dialogs/' + name + '/' + name + '.js?v=' + me.options.editorVersion
       }
 
     var $btn = $.eduibutton({
@@ -10095,7 +10095,7 @@
   })
   UM.registerUI('emotion formula', function (name) {
     var me = this,
-      url = me.options.UMEDITOR_HOME_URL + 'dialogs/' + name + '/' + name + '.js'
+      url = me.options.UMEDITOR_HOME_URL + 'dialogs/' + name + '/' + name + '.js?v=' + me.options.editorVersion
 
     var $btn = $.eduibutton({
       icon: name,

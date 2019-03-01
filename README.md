@@ -56,6 +56,7 @@ components: {
 | content  | 否   | String  | 无     | 初始化数据内容                                                                                   |
 | config   | 否   | Object  | {}     | 配置参数，详细参考 https://github.com/JakeLaoyu/v-umeditor/blob/master/static/umeditor.config.js |
 | newstyle | 否   | Boolean | true   | 是否使用新样式                                                                                   |
+| useCustomUpload   | 否   | Boolean  | false    | 是否使用 自定义文件上传                                                                                       |
 
 
 ## Events
@@ -72,4 +73,23 @@ components: {
 ```js
 // 获取实例
 window.UM.getEditor(id)
+```
+
+## 图片上传
+
+### 官方配置
+
+请参考官方DEMO文档，需要后端配合 [https://ueditor.baidu.com/website/download.html#mini](https://ueditor.baidu.com/website/download.html#mini)
+
+### ajax异步上传
+
+需要开启`useCustomUpload`配置
+
+使用`formDate`格式上传，服务端返回格式：
+
+```js
+{
+  message: 'SUCCESS',
+  url: 'xxx'
+}
 ```

@@ -6,6 +6,7 @@
   </div>
 </template>
 <script>
+import { version } from '../../package.json'
 import $ from '../../static/third-party/jquery.js'
 window.$ = window.jQuery = $
 window.UMEDITOR_HOME_URL = '//jakelaoyu.github.io/v-umeditor/static/'
@@ -30,7 +31,12 @@ export default {
     id: {
       type: String,
       required: true
+    },
+    useCustomUpload: { // 使用dxy 公共服务
+      type: Boolean,
+      default: false
     }
+
   },
   data () {
     return {
@@ -55,6 +61,8 @@ export default {
     init () {
       this.instance = UM.getEditor(this.id, {
         initialFrameWidth: '100%',
+        useCustomUpload: this.useCustomUpload,
+        editorVersion: version,
         ...this.config
       })
       this.instance.ready(() => {

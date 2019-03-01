@@ -181,6 +181,8 @@
       var me = this
       try {
         var json = eval('(' + r + ')')
+        json.url = json.url || json.results.publicUrl
+        json.state = json.state || json.message || 'SUCCESS'
         Base.callback(me.editor, me.dialog, json.url, json.state)
       } catch (e) {
         var lang = me.editor.getLang('image')
@@ -197,16 +199,31 @@
           return
         }
 
-        $('<iframe name="up"  style="display: none"></iframe>').insertBefore(me.dialog).on('load', function () {
-          var r = this.contentWindow.document.body.innerHTML
-          if (r == '') return
-          me.uploadComplete(r)
-          $(this).unbind('load')
-          $(this).remove()
-        })
+        if (me.editor.getOpt('useCustomUpload')) {
+          var xhr = new XMLHttpRequest()
+          xhr.open('post', me.editor.getOpt('imageUrl') + '?type=ajax', true)
+          xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest')
 
-        $(this).parent()[0].submit()
-        Upload.updateInput(input)
+          // 模拟数据
+          var fd = new FormData()
+          fd.append(me.editor.getOpt('imageFieldName'), this.files[0])
+
+          xhr.send(fd)
+          xhr.addEventListener('load', function (e) {
+            var r = e.target.response
+            me.uploadComplete(r)
+          })
+        } else {
+          $('<iframe name="up"  style="display: none"></iframe>').insertBefore(me.dialog).on('load', function () {
+            var r = this.contentWindow.document.body.innerHTML
+            if (r == '') return
+            me.uploadComplete(r)
+            $(this).unbind('load')
+            $(this).remove()
+          })
+          $(this).parent()[0].submit()
+          Upload.updateInput(input)
+        }
         me.toggleMask('Loading....')
         callback && callback()
       })

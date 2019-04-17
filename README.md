@@ -1,6 +1,6 @@
-# v-ueditor
+# v-umeditor
 
-> UMeditor 1.2.3 的Vue版本。
+> UMeditor(ueditor的mini版) 1.2.3 的Vue版本。
 > 加入自定义UI，适应现代风格
 
 [完整DEMO](https://jakelaoyu.github.io/v-umeditor/static/index.html?1234)

@@ -2,7 +2,7 @@
   "name": "v-umeditor",
   "description": "UMeditor(ueditor的mini版)的Vue版本",
   "version": "0.4.4",
-  "author": "Jake <yucj@dxy.cn>",
+  "author": "Jake <jake.laoyu@gmail.com>",
   "license": "MIT",
   "main": "lib/vUeditor.min.js",
   "repository": "JakeLaoyu/v-umeditor",

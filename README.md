@@ -28,7 +28,7 @@ Vue.use(vUeditor)
 ### 在组件内引用
 
 ```js
-import vUeditor from 'v-umeditor'
+import { vUeditor } from 'v-umeditor'
 
 components: {
   vUeditor

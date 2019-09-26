@@ -6478,6 +6478,19 @@ uuid@^3.0.0, uuid@^3.0.1, uuid@^3.3.2:
   resolved "https://registry.npm.taobao.org/uuid/download/uuid-3.3.3.tgz?cache=0&sync_timestamp=1566221202613&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fuuid%2Fdownload%2Fuuid-3.3.3.tgz#4568f0216e78760ee1dbf3a4d2cf53e224112866"
   integrity sha1-RWjwIW54dg7h2/Ok0s9T4iQRKGY=
 
+v-umeditor@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.npm.taobao.org/v-umeditor/download/v-umeditor-0.4.5.tgz?cache=0&sync_timestamp=1569469664719&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fv-umeditor%2Fdownload%2Fv-umeditor-0.4.5.tgz#428f64aa0786ea2b6318b5712ea81edbf6949f08"
+  integrity sha1-Qo9kqgeG6itjGLVxLqge2/aUnwg=
+  dependencies:
+    node-sass "4.9.0"
+    sass "1.5.1"
+    sass-loader "7.0.3"
+    style-loader "0.21.0"
+    url-loader "1.0.1"
+    vue "^2.5.11"
+    vue-router "3.0.1"
+
 validate-npm-package-license@^3.0.1:
   version "3.0.4"
   resolved "https://registry.npm.taobao.org/validate-npm-package-license/download/validate-npm-package-license-3.0.4.tgz#fc91f6b9c7ba15c857f4cb2c5defeec39d4f410a"

@@ -13,9 +13,12 @@
 </template>
 
 <script>
-
+import { vUeditor } from '../install'
 export default {
   name: 'app',
+  components: {
+    vUeditor
+  },
   data () {
     return {
       ue: '',

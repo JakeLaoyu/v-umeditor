@@ -1,7 +1,7 @@
 {
   "name": "v-umeditor",
   "description": "UMeditor(ueditor的mini版)的Vue版本",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "author": "Jake <jake.laoyu@gmail.com>",
   "license": "MIT",
   "main": "lib/vUeditor.min.js",
@@ -20,7 +20,6 @@
     "sass-loader": "7.0.3",
     "style-loader": "0.21.0",
     "url-loader": "1.0.1",
-    "v-umeditor": "^0.4.5",
     "vue": "^2.5.11",
     "vue-router": "3.0.1"
   },

@@ -3977,9 +3977,9 @@ lodash.uniq@^4.5.0:
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
 lodash@^4.0.0, lodash@^4.17.14, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.0, lodash@^4.3.0, lodash@~4.17.10:
-  version "4.17.15"
-  resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha1-tEf2ZwoEVbv+7dETku/zMOoJdUg=
+  version "4.17.19"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
+  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
 
 loglevel@^1.4.1:
   version "1.6.4"
@@ -6667,19 +6667,6 @@ uuid@^3.0.0, uuid@^3.0.1, uuid@^3.3.2:
   version "3.3.3"
   resolved "https://registry.npm.taobao.org/uuid/download/uuid-3.3.3.tgz?cache=0&sync_timestamp=1566221202613&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fuuid%2Fdownload%2Fuuid-3.3.3.tgz#4568f0216e78760ee1dbf3a4d2cf53e224112866"
   integrity sha1-RWjwIW54dg7h2/Ok0s9T4iQRKGY=
-
-v-umeditor@^0.4.5:
-  version "0.4.5"
-  resolved "https://registry.npm.taobao.org/v-umeditor/download/v-umeditor-0.4.5.tgz?cache=0&sync_timestamp=1569469664719&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fv-umeditor%2Fdownload%2Fv-umeditor-0.4.5.tgz#428f64aa0786ea2b6318b5712ea81edbf6949f08"
-  integrity sha1-Qo9kqgeG6itjGLVxLqge2/aUnwg=
-  dependencies:
-    node-sass "4.9.0"
-    sass "1.5.1"
-    sass-loader "7.0.3"
-    style-loader "0.21.0"
-    url-loader "1.0.1"
-    vue "^2.5.11"
-    vue-router "3.0.1"
 
 validate-npm-package-license@^3.0.1:
   version "3.0.4"

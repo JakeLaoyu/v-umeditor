@@ -4820,9 +4820,9 @@ path-key@^2.0.0, path-key@^2.0.1:
   integrity sha1-QRyttXTFoUDTpLGRDUDYDMn0C0A=
 
 path-parse@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.npm.taobao.org/path-parse/download/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
-  integrity sha1-1i27VnlAXXLEc37FhgDp3c8G0kw=
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
+  integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
 path-to-regexp@0.1.7:
   version "0.1.7"
@@ -6667,19 +6667,6 @@ uuid@^3.0.0, uuid@^3.0.1, uuid@^3.3.2:
   version "3.3.3"
   resolved "https://registry.npm.taobao.org/uuid/download/uuid-3.3.3.tgz?cache=0&sync_timestamp=1566221202613&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fuuid%2Fdownload%2Fuuid-3.3.3.tgz#4568f0216e78760ee1dbf3a4d2cf53e224112866"
   integrity sha1-RWjwIW54dg7h2/Ok0s9T4iQRKGY=
-
-v-umeditor@^0.4.5:
-  version "0.4.5"
-  resolved "https://registry.npm.taobao.org/v-umeditor/download/v-umeditor-0.4.5.tgz?cache=0&sync_timestamp=1569469664719&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fv-umeditor%2Fdownload%2Fv-umeditor-0.4.5.tgz#428f64aa0786ea2b6318b5712ea81edbf6949f08"
-  integrity sha1-Qo9kqgeG6itjGLVxLqge2/aUnwg=
-  dependencies:
-    node-sass "4.9.0"
-    sass "1.5.1"
-    sass-loader "7.0.3"
-    style-loader "0.21.0"
-    url-loader "1.0.1"
-    vue "^2.5.11"
-    vue-router "3.0.1"
 
 validate-npm-package-license@^3.0.1:
   version "3.0.4"
